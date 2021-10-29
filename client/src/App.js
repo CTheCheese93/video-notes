@@ -1,5 +1,4 @@
 import React from "react";
-import logo from './logo.svg';
 import './App.css';
 
 import VideoJS from './VideoJS';
@@ -10,8 +9,6 @@ function App() {
   const videoJsOptions = {
     autoplay: false,
     controls: true,
-    responsive: true,
-    fluid: true,
     sources: [{
       src: 'http://127.0.0.1:3000/sample.mp4',
       type: 'video/mp4'
