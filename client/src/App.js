@@ -13,7 +13,7 @@ function App() {
     responsive: true,
     fluid: true,
     sources: [{
-      src: 'http://127.0.0.1:8080/sample.mp4',
+      src: 'http://127.0.0.1:3000/sample.mp4',
       type: 'video/mp4'
     }]
   }
