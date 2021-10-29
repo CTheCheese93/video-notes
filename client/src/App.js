@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 
 import VideoJS from './VideoJS';
+import VideoPlayer from "./VideoPlayer";
 
 function App() {
   const playerRef = React.useRef(null);
@@ -27,9 +28,11 @@ function App() {
     });
   }
 
+  // <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+  // <VideoPlayer {...videoJsOptions} />
   return (
     <>
-      <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+      <VideoPlayer {...videoJsOptions } />
     </>
   );
 }
